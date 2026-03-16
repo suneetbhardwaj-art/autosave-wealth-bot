@@ -62,34 +62,39 @@ Interactive Growth Dashboard
 An intuitive dashboard visualizes portfolio performance, earnings, and long-term savings growth.
 
 Architecture
-┌─────────────────────────────────────────────┐
-│ FRONTEND                                    │
-│ React + Next.js                             │
-│                                             │
-│ ┌──────────────┐ ┌──────────────┐           │
-│ │ Savings Form │ │ Growth Chart │           │
-│ └──────┬───────┘ └──────┬───────┘           │
-│        │                │                   │
-│        ▼                ▼                   │
-│           API Requests                      │
-├─────────────────────────────────────────────┤
-│ BACKEND                                     │
-│ Node.js                                     │
-│                                             │
-│ ┌────────────────────────────────────────┐  │
-│ │ AutoSave Automation Engine             │  │
-│ │                                        │  │
-│ │ • Savings allocation                   │  │
-│ │ • Risk management                      │  │
-│ │ • DeFi pool selection                  │  │
-│ │ • Yield optimization                   │  │
-│ └────────────────────────────────────────┘  │
-├─────────────────────────────────────────────┤
-│ BLOCKCHAIN / DEFI                           │
-│ Smart DeFi Yield Pools                      │
-│                                             │
-│ Funds generate passive yield automatically  │
-└─────────────────────────────────────────────┘
+flowchart TD
+
+%% FRONTEND
+subgraph FRONTEND [Frontend - React + Next.js]
+A[Savings Form]
+B[Growth Chart]
+end
+
+%% API
+A --> C[API Requests]
+B --> C
+
+%% BACKEND
+subgraph BACKEND [Backend - Node.js]
+C --> D[AutoSave Automation Engine]
+
+D --> E[Savings Allocation]
+D --> F[Risk Management]
+D --> G[DeFi Pool Selection]
+D --> H[Yield Optimization]
+end
+
+%% BLOCKCHAIN
+subgraph DEFI [Blockchain / DeFi Layer]
+I[Smart DeFi Yield Pools]
+J[Funds Generate Passive Yield]
+end
+
+E --> I
+F --> I
+G --> I
+H --> I
+I --> J
 Demo Flow
 
 User opens the AutoSave Bot dashboard
