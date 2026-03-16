@@ -141,7 +141,7 @@ autosave-bot
 
 | Layer | Technology |
 |------|-------------|
-| Frontend | React + Next.js |
+| Frontend | React + Vite |
 | Backend | Node.js |
 | Blockchain / DeFi | Smart DeFi Yield Pools |
 | Visualization | Interactive Dashboard for Savings Growth |
