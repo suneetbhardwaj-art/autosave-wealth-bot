@@ -61,40 +61,36 @@ Interactive Growth Dashboard
 
 An intuitive dashboard visualizes portfolio performance, earnings, and long-term savings growth.
 
-Architecture
-flowchart TD
+## Architecture
+'''
+┌────────────────────────────────────────────┐
+│                FRONTEND                    │
+│              React + Next.js               │
+│                                            │
+│   Savings UI     Growth Dashboard          │
+└───────────────┬────────────────────────────┘
+                │
+                ▼
+┌────────────────────────────────────────────┐
+│                 BACKEND                    │
+│                 Node.js                    │
+│                                            │
+│  AutoSave Engine                           │
+│  • Strategy generation                     │
+│  • Risk management                         │
+│  • Yield allocation                        │
+│  • Automation logic                        │
+└───────────────┬────────────────────────────┘
+                │
+                ▼
+┌────────────────────────────────────────────┐
+│           DEFI YIELD POOLS                 │
+│                                            │
+│  Funds automatically generate yield        │
+│  through smart DeFi integrations           │
+└────────────────────────────────────────────┘
+'''
 
-%% FRONTEND
-subgraph FRONTEND [Frontend - React + Next.js]
-A[Savings Form]
-B[Growth Chart]
-end
-
-%% API
-A --> C[API Requests]
-B --> C
-
-%% BACKEND
-subgraph BACKEND [Backend - Node.js]
-C --> D[AutoSave Automation Engine]
-
-D --> E[Savings Allocation]
-D --> F[Risk Management]
-D --> G[DeFi Pool Selection]
-D --> H[Yield Optimization]
-end
-
-%% BLOCKCHAIN
-subgraph DEFI [Blockchain / DeFi Layer]
-I[Smart DeFi Yield Pools]
-J[Funds Generate Passive Yield]
-end
-
-E --> I
-F --> I
-G --> I
-H --> I
-I --> J
 Demo Flow
 
 User opens the AutoSave Bot dashboard
