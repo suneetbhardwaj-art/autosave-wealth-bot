@@ -115,26 +115,22 @@ An intuitive dashboard visualizes portfolio performance, earnings, and long-term
 
 ```
 autosave-bot
-│
-├── frontend
-│   ├── components
-│   │   ├── Dashboard
-│   │   ├── SavingsForm
-│   │   ├── GrowthChart
-│   │   └── PortfolioOverview
-│   └── pages
-│
 ├── backend
-│   ├── server.js
-│   ├── strategyEngine.js
-│   └── allocationLogic.js
-│
-├── defi-integration
-│   └── yieldPools.js
-│
-└── README.md
-```
+│   └── drizzle.config.ts
+├── frontend
+│   ├── components.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.ts
+│   └── vite.config.ts
+├── .gitignore
+├── .replit
+├── README.md
+├── package-lock.json
+├── package.json
+├── replit.md
+└── tsconfig.json
 
+```
 ---
 
 ## Tech Stack
