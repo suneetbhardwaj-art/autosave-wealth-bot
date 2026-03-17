@@ -72,7 +72,7 @@ An intuitive dashboard visualizes portfolio performance, earnings, and long-term
 ```text
 ┌────────────────────────────────────────────┐
 │                FRONTEND                    │
-│              React + Next.js               │
+│              React + Vite               │
 │                                            │
 │   Savings UI     Growth Dashboard          │
 └───────────────┬────────────────────────────┘
