@@ -4,7 +4,7 @@
 A full-stack hackathon web application that lets users connect MetaMask and make real on-chain deposits into YO Protocol's yoUSD vault on Base network, plus a DeFi savings simulator.
 
 ## Architecture
-
+ 
 ### Tech Stack
 - **Frontend**: React + Vite, TypeScript (ES2020 target), TailwindCSS, Framer Motion
 - **Backend**: Express.js, TypeScript, Drizzle ORM
