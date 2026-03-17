@@ -5,7 +5,7 @@ AutoSave Bot is an intelligent financial automation platform that turns everyday
 Instead of manually saving, researching pools, and managing investments, users simply set their income and risk preference — the system automatically allocates funds into optimized DeFi opportunities to generate passive yield.
 
 **Built for the DoraHacks Hackathon**
-
+ 
 ---
 
 ## What is AutoSave Bot?
